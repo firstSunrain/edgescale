@@ -1,0 +1,60 @@
+<template>
+  <div class='block-card'>
+    <el-row :gutter='20'>
+      <!--<el-col :span='12' class='box-card-container col-bottom' v-for="(value, key) in list" :key='key' :class="setClass(key%5)">-->
+      <el-col :span='12' class='box-card-container col-bottom' v-for="(value, key) in list" :key='key'>
+        <el-card class="box-card" :class="setClass(key%6)">
+          <div slot="header" class="clearfix">
+            <div class='card-tit'>
+              <div class="block-w n-link"><router-link :to="{name: 'zoo_detail', params: {id: value.id}}">{{value.name}}</router-link></div>
+            </div>
+          </div>
+          <ul class='card-ul'>
+            <ul class="card-ul-inner">
+              <li class='li-bottom'>
+                <div class="block-type">{{ $t('UPDATE_TIME') }}</div>
+                <div class="block-w">{{value.date_updated}}</div>
+              </li>
+              <li class='li-bottom'>
+                <div class="block-type">{{ $t('CREATE_TIME') }}</div>
+                <div class="block-w">{{value.date_created}}</div>
+              </li>
+            </ul>
+            <ul class="card-ul-inner">
+              <li class='li-bottom'>
+                <div class="block-type li-100">{{ $t('DESCRIPTION') }}</div>
+                <div class="block-w con-wrap">{{value.description}}</div>
+              </li>
+            </ul>
+          </ul>
+        </el-card>
+      </el-col>
+    </el-row>
+  </div>
+</template>
+<script>
+export default {
+  props: ['list', 'user_type', 'showModel'],
+  data () {
+    return {
+    }
+  },
+  methods: {
+    setClass (key) {
+      let obj = {}
+      obj[`bgColor${key}`] = true
+      return obj
+    }
+  }
+}
+</script>
+<style scoped>
+  .box-card{position: relative;}
+  .col-bottom{margin-bottom: 20px;}
+  .card-ul{padding: 0px;margin: 0px;height: auto;overflow: hidden;}
+  .card-ul > li{float: left; width: 50%;list-style: none;height: 70px;}
+  .li-100{width: 100%;}
+  .drop-del{color: #8e1c1c;}
+  .box-card .el-card__header{background-color: #f2f2f2;padding: 10px 20px;}
+  .card-opr a:hover, .card-opr li:hover{ color:#5ca3e2 !important;}
+</style>

@@ -1,0 +1,44 @@
+{
+  "devices": [
+    {
+      "id": 248,
+      "name": "b4b61a61862559bf99cf06ed72e1e555.yun.thing.ls1088ardb-1.nxp"
+    },
+    {
+      "id": 260,
+      "name": "7fef88f7411d5669b42dbf5fc7f9b58b.yun.thing.ls1088ardb-1.nxp"
+    },
+    {
+      "id": 250,
+      "name": "9773f38196ad59d0a680ebe46dccff5c.yun.thing.ls1088ardb-1.nxp"
+    },
+    {
+      "id": 251,
+      "name": "b04965e6a9bb591f8f8a1adcb2c8dc39.yun.thing.ls1088ardb-1.nxp"
+    },
+    {
+      "id": 252,
+      "name": "4b166dbed99d5091abdd95b83330ed3a.yun.thing.ls1088ardb-1.nxp"
+    },
+    {
+      "id": 249,
+      "name": "586530ccd3e355c3bff9f4d08fb0e1aa.yun.thing.ls1088ardb-1.nxp"
+    },
+    {
+      "id": 259,
+      "name": "0159d6c7973f5e7aa9a0d195d0ea6fe2.yun.thing.ls1088ardb-1.nxp"
+    },
+    {
+      "id": 246,
+      "name": "e934fb29b27e5e8aa0c1b7ee6ffc2020.yun.thing.ls1088ardb-1.nxp"
+    },
+    {
+      "id": 247,
+      "name": "78286d23536c58f2becc09fada4b71cb.yun.thing.ls1088ardb-1.nxp"
+    },
+    {
+      "id": 261,
+      "name": "52524d6e10dc5261aa368b2efcbaa5f0.yun.thing.ls1088ardb-1.nxp"
+    }
+  ]
+}
